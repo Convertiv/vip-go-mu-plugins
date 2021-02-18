@@ -6,12 +6,12 @@ namespace Automattic\VIP\Core\Updates;
  * Show plugin update notices on the plugins page.
  *
  * This is basically a copy of Core's wp_plugin_update_rows() function.
- * The only difference is that we use the manage_options cap instead of update_plugins.
+ * The only difference is that we use the activate_plugins cap instead of update_plugins.
  * Because no one on VIP has update_plugins, core's notices are never displayed.
  * With this change, we make them visible.
  */
 function show_plugin_update_notices() {
-	if ( ! current_user_can( 'manage_options' ) ) {
+	if ( ! current_user_can( 'activate_plugins' ) ) {
 		return;
 	}
 
