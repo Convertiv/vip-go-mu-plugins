@@ -1,6 +1,6 @@
 {
     "name": "VIP Go mu-plugins",
-    "type": "wordpress-mu-plugins",
+    "type": "wordpress-muplugin",
     "require-dev": {
         "phpunit/phpunit": "~7.5.14",
         "automattic/vipwpcs": "^2.0",
